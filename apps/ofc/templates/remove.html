@@ -1,0 +1,9 @@
+<h3>Are you sure you want to delete the following course?</h3>
+<p>Name: {{course.name}}</p>
+<p>Description: {{course.description}}</p>
+<form method='get' action='/'>
+	<button type='submit'>No</button>
+</form>
+<form method='get' action='/remove/{{course.id}}'>
+	<button type='submit'>Yes! I want to delete this</button>
+</form>
